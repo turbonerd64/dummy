@@ -11,13 +11,26 @@ body {
     text-align: center;
 }
 
-#number {
-    font-size: 100px;
-    margin: 0;
+input {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
-#incrementButton {
-    font-size: 50px;
-    padding: 20px;
+button {
+    font-size: 20px;
+    padding: 10px 20px;
     cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-top: 10px;
 }

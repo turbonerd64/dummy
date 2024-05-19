@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Increment Button</title>
+    <title>Input Saver</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <p id="number">0</p>
-        <button id="incrementButton">+1</button>
+        <input type="text" id="inputField" placeholder="Enter your text here...">
+        <button id="saveButton">Save</button>
+        <ul id="fileList"></ul>
     </div>
+    <!-- Add Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <!-- Initialize Firebase -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAAKdmpIYUOa0Me3AT7sqCddZM-t4RxuWg",
+            authDomain: "dummy-eb045.firebaseapp.com",
+            projectId: "dummy-eb045",
+            storageBucket: "dummy-eb045.appspot.com",
+            messagingSenderId: "543491089703",
+            appId: "1:543491089703:web:c119fec64ed6e679a8f502"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var storage = firebase.storage();
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
