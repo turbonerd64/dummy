@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#number {
+    font-size: 100px;
+    margin: 0;
+}
+
+#incrementButton {
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
